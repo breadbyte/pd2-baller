@@ -1,0 +1,28 @@
+{
+	"name": "baller",
+	"description": "flashbangs turn into baller",
+	"author": "breadmantoast",
+	"version": "1.0",
+	"blt_version": 2,
+	"hooks": [
+		{
+			"hook_id": "lib/units/weapons/grenades/quickflashgrenade",
+			"script_path": "sound.lua"
+		},
+        {
+            "hook_id": "core/lib/managers/coreenvironmentcontrollermanager",
+			"script_path": "screen.lua"
+        }
+	],
+    "keybinds": [
+		{
+			"keybind_id" : "keybind_spawn_flash",
+			"name" : "Spawn a flashbang",
+			"description" : "A keybind to press in-game which bangs your flashes"
+			"script_path" : "spawn.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}
